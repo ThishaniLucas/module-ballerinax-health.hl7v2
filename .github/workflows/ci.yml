@@ -8,6 +8,7 @@ on:
 
 env:
   HL7V2_PATTERN: '*/*'
+  UTILS_PATTERN: 'utils/*/*'
   GITHUB_WORKFLOWS_DIR: '.github'
 
 jobs:
@@ -40,6 +41,8 @@ jobs:
           for file in "${CHANGED_FILES_ARRAY[@]}"; do
             if [[ $file == $HL7V2_PATTERN ]]; then
               EXTRACTED_PATH=$(echo "$file" | cut -d '/' -f 1)
+            elif [[ $file == $UTILS_PATTERN ]]; then
+              EXTRACTED_PATH=$(echo "$file" | cut -d '/' -f 1-2)
             fi
 
             if [[ $EXTRACTED_PATH && $EXTRACTED_PATH != $GITHUB_WORKFLOWS_DIR ]]; then
