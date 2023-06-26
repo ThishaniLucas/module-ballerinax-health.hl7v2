@@ -20,7 +20,7 @@ import ballerinax/health.hl7v2;
 # Data type description
 #
 # + cm_aui1 - Data type field
-# + cm_aui2 - Data type field
+# + cm_aui2 - Data type fieldx
 # + cm_aui3 - Data type field
 @hl7v2:TypeDefinition {
     length: (),
