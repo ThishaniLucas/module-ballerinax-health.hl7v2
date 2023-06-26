@@ -22,7 +22,7 @@ import ballerinax/health.hl7v2;
 # + ad2 - Other Designation  
 # + ad3 - City  
 # + ad4 - State Or Province  
-# + ad5 - Zip Or Postal Code  
+# + ad5 - Zip Or Postal Code   
 # + ad6 - Country  
 # + ad7 - Address Type  
 # + ad8 - Other Geographic Designation
